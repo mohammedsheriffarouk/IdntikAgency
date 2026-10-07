@@ -661,3 +661,12 @@ html,body{overflow-x:clip}
 .nav a[aria-current="page"]{color:var(--ink)}
 .lang-ar .nav a{letter-spacing:0;font-size:14px}
 .scroll-cue{font-weight:300!important;color:var(--ink2)}
+
+/* ── Who we are: black section ──────────────────────── */
+#who{background:var(--ink);color:var(--white);border-top:none}
+#who h2,#who .h2{color:var(--white)}
+#who .label{color:var(--b2)}
+#who p{color:var(--b2)}
+#who .text-link{color:var(--white);border-color:var(--ink2)}
+#who .text-link:hover{color:var(--red);border-color:var(--red)}
+#who + section{border-top:none}
