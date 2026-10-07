@@ -670,3 +670,8 @@ html,body{overflow-x:clip}
 #who .text-link{color:var(--white);border-color:var(--ink2)}
 #who .text-link:hover{color:var(--red);border-color:var(--red)}
 #who + section{border-top:none}
+/* manifesto: compact */
+.pair{font-size:clamp(18px,2vw,28px)!important;padding:clamp(10px,1.1vw,14px) 0!important}
+.pair .o{font-size:11px;font-weight:300!important}
+.pair .bx{background-size:0 1.5px}
+.pair:hover .bx,.pair.struck .bx{background-size:100% 1.5px}
