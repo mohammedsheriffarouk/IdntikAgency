@@ -50,22 +50,22 @@ window.IDNTIK_CONFIG = {
 
   /* About · team. dept must match a key in DEPTS below. photo = Cuber character image */
   team: [
-    { name:"Mohamed Sherif",   role:"Founder & CEO",              dept:"mgmt",     photo:"" },
-    { name:"[ADD_NAME]",       role:"Account Manager",            dept:"client",   photo:"" },
-    { name:"[ADD_NAME]",       role:"Brand Strategist",           dept:"client",   photo:"" },
-    { name:"[ADD_NAME]",       role:"Traffic Manager",            dept:"ops",      photo:"" },
-    { name:"[ADD_NAME]",       role:"Coordinator",                dept:"ops",      photo:"" },
-    { name:"[ADD_NAME]",       role:"Art Director",               dept:"design",   photo:"" },
-    { name:"[ADD_NAME]",       role:"Branding Designer",          dept:"design",   photo:"" },
-    { name:"[ADD_NAME]",       role:"Graphic Designer",           dept:"design",   photo:"" },
-    { name:"[ADD_NAME]",       role:"Senior Illustrator",         dept:"illus",    photo:"" },
-    { name:"[ADD_NAME]",       role:"Illustrator Artist",         dept:"illus",    photo:"" },
-    { name:"[ADD_NAME]",       role:"Motion Designer",            dept:"illus",    photo:"" },
-    { name:"[ADD_NAME]",       role:"Marketing Manager",          dept:"mkt",      photo:"" },
-    { name:"[ADD_NAME]",       role:"Content Creator & Copywriter", dept:"mkt",    photo:"" },
-    { name:"[ADD_NAME]",       role:"Social Media Specialist",    dept:"mkt",      photo:"" },
-    { name:"[ADD_NAME]",       role:"Performance Specialist",     dept:"mkt",      photo:"" },
-    { name:"[ADD_NAME]",       role:"Media Buyer",                dept:"mkt",      photo:"" }
+    { name:"Mohamed Sherif",   role:"Founder & CEO",              dept:"mgmt",     photo:"assets/team/cuber-sample.webp" },
+    { name:"[ADD_NAME]",       role:"Account Manager",            dept:"client",   photo:"assets/team/cuber-sample.webp" },
+    { name:"[ADD_NAME]",       role:"Brand Strategist",           dept:"client",   photo:"assets/team/cuber-sample.webp" },
+    { name:"[ADD_NAME]",       role:"Traffic Manager",            dept:"ops",      photo:"assets/team/cuber-sample.webp" },
+    { name:"[ADD_NAME]",       role:"Coordinator",                dept:"ops",      photo:"assets/team/cuber-sample.webp" },
+    { name:"[ADD_NAME]",       role:"Art Director",               dept:"design",   photo:"assets/team/cuber-sample.webp" },
+    { name:"[ADD_NAME]",       role:"Branding Designer",          dept:"design",   photo:"assets/team/cuber-sample.webp" },
+    { name:"[ADD_NAME]",       role:"Graphic Designer",           dept:"design",   photo:"assets/team/cuber-sample.webp" },
+    { name:"[ADD_NAME]",       role:"Senior Illustrator",         dept:"illus",    photo:"assets/team/cuber-sample.webp" },
+    { name:"[ADD_NAME]",       role:"Illustrator Artist",         dept:"illus",    photo:"assets/team/cuber-sample.webp" },
+    { name:"[ADD_NAME]",       role:"Motion Designer",            dept:"illus",    photo:"assets/team/cuber-sample.webp" },
+    { name:"[ADD_NAME]",       role:"Marketing Manager",          dept:"mkt",      photo:"assets/team/cuber-sample.webp" },
+    { name:"[ADD_NAME]",       role:"Content Creator & Copywriter", dept:"mkt",    photo:"assets/team/cuber-sample.webp" },
+    { name:"[ADD_NAME]",       role:"Social Media Specialist",    dept:"mkt",      photo:"assets/team/cuber-sample.webp" },
+    { name:"[ADD_NAME]",       role:"Performance Specialist",     dept:"mkt",      photo:"assets/team/cuber-sample.webp" },
+    { name:"[ADD_NAME]",       role:"Media Buyer",                dept:"mkt",      photo:"assets/team/cuber-sample.webp" }
   ],
 
   /* Home · stage details (opened from "Explore the services" on a stage card).
