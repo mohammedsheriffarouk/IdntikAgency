@@ -21,7 +21,7 @@ window.IDNTIK_CONFIG = {
   tallyInternUrl:        "[ADD_TALLY_INTERN]",          // Careers · Internship application
   tallyHiringUrl:        "[ADD_TALLY_HIRING]",          // Careers · Job application
   tallyIntakeUrl:        "[ADD_TALLY_INTAKE]",          // Contact · Idntik intake form
-  tallyEmployerBriefUrl: "[ADD_TALLY_EMPLOYER_BRIEF]",  // Contact · Employer branding brief
+  tallyBrandingBriefUrl: "[ADD_TALLY_BRANDING_BRIEF]",  // Contact · Branding brief
 
   /* Home · "With who" — only clients who agreed. logo = path to transparent SVG/PNG */
   clients: [
