@@ -12,7 +12,7 @@
   --sh2:0 4px 12px rgba(0,0,0,.09),0 8px 32px rgba(0,0,0,.06);
   --r:6px; --r2:10px; --r3:16px;
   --font:'Rubik',system-ui,-apple-system,'Segoe UI',Tahoma,sans-serif;
-  --mono:ui-monospace,'SFMono-Regular','Courier New',monospace;
+  --mono:'Rubik',system-ui,sans-serif;
   --d-hero:clamp(48px,10vw,152px);
   --d-page:clamp(44px,7.4vw,112px);
   --d-xl:clamp(36px,6vw,84px);
@@ -436,7 +436,7 @@ footer{background:var(--white);border-top:1px solid var(--b1);padding-block:48px
 .wordmark{display:flex;align-items:center}
 .wordmark .logo-svg{display:block;height:22px;width:auto}
 .wordmark .logo-svg rect{transition:transform .3s var(--ease)}
-.wordmark:hover .logo-svg rect[fill="#FF3A00"]{transform:translateY(-.6px)}
+.wordmark:hover .logo-svg rect[fill="#C8221A"]{transform:translateY(-.6px)}
 .f-big{display:block;text-decoration:none}
 .f-big .logo-svg{display:block;height:clamp(44px,8vw,112px);width:auto}
 
@@ -512,9 +512,9 @@ html.sd-lock,html.sd-lock body{overflow:hidden}
 /* 1 · header logo intro */
 @keyframes lgFade{from{opacity:0}to{opacity:1}}
 @keyframes lgDrop{from{opacity:0;transform:translateY(-1.6px)}to{opacity:1;transform:none}}
-.logo-svg rect[fill="#FF3A00"]{transform-box:fill-box}
+.logo-svg rect[fill="#C8221A"]{transform-box:fill-box}
 .logo-svg.intro rect{animation:lgFade .5s ease both}
-.logo-svg.intro rect[fill="#FF3A00"]{animation:lgDrop .5s var(--ease) .35s both}
+.logo-svg.intro rect[fill="#C8221A"]{animation:lgDrop .5s var(--ease) .35s both}
 /* 2 · page sweep */
 .sweep{position:fixed;inset:0;z-index:999;background:var(--red);transform:scaleX(0);transform-origin:left;pointer-events:none}
 .sweep.enter{transition:transform .35s var(--ease);transform:scaleX(1)}
@@ -535,9 +535,9 @@ html[dir="rtl"] .sweep.leave{transform-origin:left}
 .lang-ar .label.dash::before{transform-origin:right}
 .label.dash.drawn::before,.sd-kicker.dash.drawn::before{transform:none}
 /* 6 · footer logo dots */
-.logo-svg.await rect[fill="#FF3A00"]{opacity:0}
-.logo-svg.intro-dots rect[fill="#FF3A00"]{animation:lgDrop .5s var(--ease) both}
-.logo-svg.intro-dots rect[x="30"][fill="#FF3A00"]{animation-delay:.12s}
+.logo-svg.await rect[fill="#C8221A"]{opacity:0}
+.logo-svg.intro-dots rect[fill="#C8221A"]{animation:lgDrop .5s var(--ease) both}
+.logo-svg.intro-dots rect[x="30"][fill="#C8221A"]{animation-delay:.12s}
 /* 7 · buttons: colour fills from the start edge */
 .btn,.stage-open{isolation:isolate}
 .btn-primary::before,.btn-ghost::before,.stage-open::after{content:"";position:absolute;inset:0;z-index:-1;transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
@@ -626,3 +626,24 @@ button,.btn,.btn-sm,.text-link,.stage-open,.sd-cta,.lang-btn,.menu-btn,.copy,.ft
 .tform:hover .tf-go{color:var(--red)}
 .tform .ph{position:absolute;top:clamp(22px,3vw,36px);inset-inline-end:clamp(22px,3vw,36px)}
 @media (max-width:700px){.tforms{grid-template-columns:1fr}.tform{min-height:0}}
+
+/* ── numbers: Rubik, tabular so they line up ────────── */
+.ph,.count,.row .num,.oc .k,.ctr,.sol .num,.perk .k,.stage-meta .num,.tf-n{font-variant-numeric:tabular-nums;letter-spacing:.02em}
+
+/* ── language switch: plain Light text link ─────────── */
+.lang-btn{background:none!important;border:0!important;padding:6px 2px!important;font:300 13px var(--font)!important;letter-spacing:.12em!important;color:var(--ink)!important;text-transform:uppercase;cursor:pointer;border-bottom:1px solid transparent!important}
+.lang-btn:hover{color:var(--red)!important}
+.lang-btn .on{color:var(--ink)}
+.lang-btn .off{color:var(--ink3)}
+.lang-btn .sep{color:var(--b2);margin:0 6px}
+
+/* ── manifesto: strike the word only ────────────────── */
+.pair .b{background:none!important}
+.pair .bx{background:linear-gradient(var(--ink3),var(--ink3)) no-repeat 0 55%/0 2px;transition:background-size .45s var(--ease)}
+.lang-ar .pair .bx{background-position:100% 55%}
+.pair:hover .bx,.pair.struck .bx{background-size:100% 2px}
+
+/* skip link: hidden until focused, without widening the page (RTL-safe) */
+.skip{position:absolute;inset-inline-start:12px;top:8px;z-index:999;padding:8px 12px;background:var(--ink);color:var(--white);transform:translateY(-200%);transition:transform .2s}
+.skip:focus{transform:none}
+html,body{overflow-x:clip}

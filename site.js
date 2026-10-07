@@ -293,7 +293,7 @@ window.IDNTIK_CONFIG = {
      ['Partner','supplier','الشريك','المورّد']
     ].forEach(function(p){
       var r = document.createElement('div'); r.className = 'pair';
-      r.innerHTML = '<span class="a">'+bi(p[0],p[2])+'</span><span class="o">'+bi('over','قبل')+'</span><span class="b">'+bi(p[1],p[3])+'</span>';
+      r.innerHTML = '<span class="a">'+bi(p[0],p[2])+'</span><span class="o">'+bi('over','قبل')+'</span><span class="b"><span class="bx">'+bi(p[1],p[3])+'</span></span>';
       pairsEl.appendChild(r);
     });
   }
@@ -493,7 +493,7 @@ window.IDNTIK_CONFIG = {
   function setLang(l){
     app.className = 'lang-' + l;
     document.documentElement.lang = l; document.documentElement.dir = l==='ar' ? 'rtl' : 'ltr';
-    langBtn.textContent = l==='ar' ? 'EN' : 'عربي';
+    langBtn.innerHTML = l==='ar' ? '<span class="off">EN</span><span class="sep">/</span><span class="on">AR</span>' : '<span class="on">EN</span><span class="sep">/</span><span class="off">AR</span>';
     if (form && form._fail) form._fail();
     try { localStorage.setItem('idntik-lang', l); } catch(e){}
   }
