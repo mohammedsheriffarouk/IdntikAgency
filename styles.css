@@ -651,3 +651,8 @@ html,body{overflow-x:clip}
 /* ── CTA: copy sits right under the heading ─────────── */
 .cta .cta-grid{margin-top:clamp(24px,3vw,40px);align-items:start}
 .cta .cta-copy .lede{margin:0;max-width:46ch}
+/* CTA: cards sit under the text, three across */
+.cta .cta-grid{grid-template-columns:1fr;gap:clamp(28px,3.4vw,44px)}
+.cta .channels{grid-template-columns:repeat(3,minmax(0,1fr))}
+.cta .ch{min-height:96px}
+@media (max-width:800px){.cta .channels{grid-template-columns:1fr}}
