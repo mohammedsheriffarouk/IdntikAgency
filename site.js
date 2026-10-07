@@ -44,7 +44,20 @@ window.IDNTIK_CONFIG = {
     { name:"Sajan Law", logo:"assets/clients/sajan-law.webp" },
     { name:"Laboratoire Premier", logo:"assets/clients/laboratoire-premier.webp" },
     { name:"Mashariq Development", logo:"assets/clients/mashariq-development.webp" },
-    { name:"SSEC", logo:"assets/clients/ssec.webp" }
+    { name:"SSEC", logo:"assets/clients/ssec.webp" },
+    { name:"Yemen Mall", logo:"assets/clients/yemen-mall.webp" },
+    { name:"Kenaz", logo:"assets/clients/kenaz.webp" },
+    { name:"OOZ", logo:"assets/clients/ooz.webp" },
+    { name:"Razziine", logo:"assets/clients/razziine.webp" },
+    { name:"Need", logo:"assets/clients/need.webp" },
+    { name:"Executive Mastery Camp", logo:"assets/clients/executive-mastery-camp.webp" },
+    { name:"Washyn", logo:"assets/clients/washyn.webp" },
+    { name:"Elktrik", logo:"assets/clients/elktrik.webp" },
+    { name:"Roseen", logo:"assets/clients/roseen.webp" },
+    { name:"Graphic School", logo:"assets/clients/graphic-school.webp" },
+    { name:"Bn Taher Holding", logo:"assets/clients/bn-taher-holding.webp" },
+    { name:"Lexi Home", logo:"assets/clients/lexi-home.webp" },
+    { name:"Branders Circle", logo:"assets/clients/branders-circle.webp" }
   ],
   totalClients: "",   // optional, e.g. "060" shows 020/060; empty shows "020 brands"
 
