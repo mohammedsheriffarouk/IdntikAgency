@@ -613,3 +613,16 @@ button,.btn,.btn-sm,.text-link,.stage-open,.sd-cta,.lang-btn,.menu-btn,.copy,.ft
 .ch.primary .k{color:#FFD9D6}
 .impact .label,.dark .label,.ft .label{color:var(--b2)}
 .lang-ar .label,.lang-ar .sd-kicker,.lang-ar .ch .k{letter-spacing:0;font-size:14px}
+
+/* ── Tally form cards ───────────────────────────────── */
+.tforms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tform{position:relative;display:flex;flex-direction:column;gap:12px;padding:clamp(22px,3vw,36px);background:var(--white);border:1px solid var(--b1);color:var(--ink);text-decoration:none;min-height:240px;transition:border-color .2s,transform .2s var(--ease)}
+.tform:hover{border-color:var(--ink);transform:translateY(-2px)}
+.tf-n{font:800 12px var(--mono);color:var(--red);direction:ltr}
+.tform h3{font-size:clamp(22px,2.4vw,32px);font-weight:300;line-height:1.1;letter-spacing:0;margin:0}
+.tform p{font-size:15px;color:var(--ink2);margin:0;max-width:44ch}
+.tf-go{margin-top:auto;font-size:13px;font-weight:300;letter-spacing:.06em;text-transform:uppercase;display:inline-flex;gap:8px;align-items:center;padding-top:14px;border-top:1px solid var(--b1)}
+.lang-ar .tf-go{letter-spacing:0}
+.tform:hover .tf-go{color:var(--red)}
+.tform .ph{position:absolute;top:clamp(22px,3vw,36px);inset-inline-end:clamp(22px,3vw,36px)}
+@media (max-width:700px){.tforms{grid-template-columns:1fr}.tform{min-height:0}}

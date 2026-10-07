@@ -17,6 +17,12 @@ window.IDNTIK_CONFIG = {
   behanceUrl:     "https://www.behance.net/idntik",
   facebookUrl:    "https://www.facebook.com/IdntikAgency",
 
+  /* Tally forms — paste each form's share link (https://tally.so/r/xxxx) */
+  tallyInternUrl:        "[ADD_TALLY_INTERN]",          // Careers · Internship application
+  tallyHiringUrl:        "[ADD_TALLY_HIRING]",          // Careers · Job application
+  tallyIntakeUrl:        "[ADD_TALLY_INTAKE]",          // Contact · Idntik intake form
+  tallyEmployerBriefUrl: "[ADD_TALLY_EMPLOYER_BRIEF]",  // Contact · Employer branding brief
+
   /* Home · "With who" — only clients who agreed. logo = path to transparent SVG/PNG */
   clients: [
     { name:"Calla Pharmacy", logo:"assets/clients/calla-pharmacy.webp" },
