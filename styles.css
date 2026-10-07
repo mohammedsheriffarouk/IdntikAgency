@@ -647,3 +647,7 @@ button,.btn,.btn-sm,.text-link,.stage-open,.sd-cta,.lang-btn,.menu-btn,.copy,.ft
 .skip{position:absolute;inset-inline-start:12px;top:8px;z-index:999;padding:8px 12px;background:var(--ink);color:var(--white);transform:translateY(-200%);transition:transform .2s}
 .skip:focus{transform:none}
 html,body{overflow-x:clip}
+
+/* ── CTA: copy sits right under the heading ─────────── */
+.cta .cta-grid{margin-top:clamp(24px,3vw,40px);align-items:start}
+.cta .cta-copy .lede{margin:0;max-width:46ch}
