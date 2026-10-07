@@ -7,6 +7,7 @@ window.IDNTIK_CONFIG = {
   email:          "info@idntik.com",            // hello@idntik.com
   hrEmail:        "info@idntik.com",        // temporary — switch to hr@idntik.com when ready
   whatsappNumber: "201025600469",  // international, digits only: 2010XXXXXXXX
+  whatsappDisplay:"+20 102 560 0469", // how the number is shown in the footer
   officeAddress:  "Fifth Settlement, New Cairo",
   mapsUrl:        "https://www.google.com/maps/search/?api=1&query=Idntik+Agency+New+Cairo",
   // Forms post JSON here (Formspree, Make/Zapier webhook, Google Apps Script → Sheets).
@@ -213,6 +214,16 @@ window.IDNTIK_CONFIG = {
     var k = el.getAttribute('data-text'), v = C[k];
     if (isPh(v)) el.appendChild(tag(v)); else el.textContent = (k==='whatsappNumber' ? '+' : '') + v;
   });
+  $$('[data-mail]').forEach(function(a){ if (!isPh(C.email)) a.href = 'mailto:' + C.email; });
+  /* footer · Cairo live clock */
+  (function(){
+    var el = $('#ftClock'); if (!el) return;
+    function tick(){
+      var d = new Date(), o = {timeZone:'Africa/Cairo', hour:'numeric', minute:'2-digit', hour12:true};
+      try { el.innerHTML = bi(d.toLocaleTimeString('en-US', o), d.toLocaleTimeString('ar-EG', o)); } catch(e){ el.textContent = ''; }
+    }
+    tick(); setInterval(tick, 20000);
+  })();
   $$('[data-wa]').forEach(function(a){ if (waBase) { a.href = waBase; a.target='_blank'; a.rel='noopener'; } else a.addEventListener('click', function(e){ e.preventDefault(); }); });
   $$('[data-copy]').forEach(function(b){
     b.addEventListener('click', function(){
