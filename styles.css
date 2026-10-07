@@ -597,3 +597,13 @@ footer.ft{background:var(--ink);color:var(--white);border-top:0;padding-block:cl
 h1,h2,h3,h4,h5,h6,legend,.ft-cta{text-transform:uppercase}
 h3,h4,h5,h6{letter-spacing:.02em}
 .lang-ar h1,.lang-ar h2,.lang-ar h3,.lang-ar h4,.lang-ar h5,.lang-ar h6{letter-spacing:0}
+
+/* ── all buttons: capitals, Light ───────────────────── */
+button,.btn,.btn-sm,.text-link,.stage-open,.sd-cta,.lang-btn,.menu-btn,.copy,.ft-cta,
+.chip span,.ch .v,.nav-cta,.topbar .btn{text-transform:uppercase;font-weight:300!important;letter-spacing:.06em}
+.ch .v{font-size:clamp(17px,1.6vw,20px)}
+.chip span small{text-transform:none;font-weight:300;letter-spacing:0}
+.lang-ar button,.lang-ar .btn,.lang-ar .text-link,.lang-ar .chip span,.lang-ar .ch .v,.lang-ar .ft-cta{letter-spacing:0}
+.ch .v [data-text="whatsappDisplay"],a.ch .v{direction:ltr;unicode-bidi:isolate}
+[hidden]{display:none!important}
+.chip span span{padding:0;border:0;background:transparent;display:inline;color:inherit;transform:none!important}
