@@ -592,3 +592,8 @@ footer.ft{background:var(--ink);color:var(--white);border-top:0;padding-block:cl
   .ft-nav{grid-template-columns:1fr 1fr}
   .ft-bottom{flex-direction:column;align-items:flex-start}
 }
+
+/* ── all titles in capitals ─────────────────────────── */
+h1,h2,h3,h4,h5,h6,legend,.ft-cta{text-transform:uppercase}
+h3,h4,h5,h6{letter-spacing:.02em}
+.lang-ar h1,.lang-ar h2,.lang-ar h3,.lang-ar h4,.lang-ar h5,.lang-ar h6{letter-spacing:0}
