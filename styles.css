@@ -656,3 +656,8 @@ html,body{overflow-x:clip}
 .cta .channels{grid-template-columns:repeat(3,minmax(0,1fr))}
 .cta .ch{min-height:96px}
 @media (max-width:800px){.cta .channels{grid-template-columns:1fr}}
+/* nav links: Light capitals */
+.nav a{font-weight:300!important;font-size:13px;letter-spacing:.12em;color:var(--ink)}
+.nav a[aria-current="page"]{color:var(--ink)}
+.lang-ar .nav a{letter-spacing:0;font-size:14px}
+.scroll-cue{font-weight:300!important;color:var(--ink2)}
