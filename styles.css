@@ -607,3 +607,9 @@ button,.btn,.btn-sm,.text-link,.stage-open,.sd-cta,.lang-btn,.menu-btn,.copy,.ft
 .ch .v [data-text="whatsappDisplay"],a.ch .v{direction:ltr;unicode-bidi:isolate}
 [hidden]{display:none!important}
 .chip span span{padding:0;border:0;background:transparent;display:inline;color:inherit;transform:none!important}
+
+/* ── section labels: Light capitals (slightly larger + darker to stay readable) ── */
+.label,.sd-kicker,.ch .k{font-weight:300!important;font-size:13px;letter-spacing:.14em;color:var(--ink2)}
+.ch.primary .k{color:#FFD9D6}
+.impact .label,.dark .label,.ft .label{color:var(--b2)}
+.lang-ar .label,.lang-ar .sd-kicker,.lang-ar .ch .k{letter-spacing:0;font-size:14px}
