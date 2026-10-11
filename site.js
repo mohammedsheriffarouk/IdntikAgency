@@ -63,22 +63,15 @@ window.IDNTIK_CONFIG = {
 
   /* About · team. dept must match a key in DEPTS below. photo = Cuber character image */
   team: [
-    { name:"Mohamed Sherif",   role:"Founder & CEO",              dept:"mgmt",     photo:"assets/team/cuber-sample.webp" },
-    { name:"[ADD_NAME]",       role:"Account Manager",            dept:"client",   photo:"assets/team/cuber-sample.webp" },
-    { name:"[ADD_NAME]",       role:"Brand Strategist",           dept:"client",   photo:"assets/team/cuber-sample.webp" },
-    { name:"[ADD_NAME]",       role:"Traffic Manager",            dept:"ops",      photo:"assets/team/cuber-sample.webp" },
-    { name:"[ADD_NAME]",       role:"Coordinator",                dept:"ops",      photo:"assets/team/cuber-sample.webp" },
-    { name:"[ADD_NAME]",       role:"Art Director",               dept:"design",   photo:"assets/team/cuber-sample.webp" },
-    { name:"[ADD_NAME]",       role:"Branding Designer",          dept:"design",   photo:"assets/team/cuber-sample.webp" },
-    { name:"[ADD_NAME]",       role:"Graphic Designer",           dept:"design",   photo:"assets/team/cuber-sample.webp" },
-    { name:"[ADD_NAME]",       role:"Senior Illustrator",         dept:"illus",    photo:"assets/team/cuber-sample.webp" },
-    { name:"[ADD_NAME]",       role:"Illustrator Artist",         dept:"illus",    photo:"assets/team/cuber-sample.webp" },
-    { name:"[ADD_NAME]",       role:"Motion Designer",            dept:"illus",    photo:"assets/team/cuber-sample.webp" },
-    { name:"[ADD_NAME]",       role:"Marketing Manager",          dept:"mkt",      photo:"assets/team/cuber-sample.webp" },
-    { name:"[ADD_NAME]",       role:"Content Creator & Copywriter", dept:"mkt",    photo:"assets/team/cuber-sample.webp" },
-    { name:"[ADD_NAME]",       role:"Social Media Specialist",    dept:"mkt",      photo:"assets/team/cuber-sample.webp" },
-    { name:"[ADD_NAME]",       role:"Performance Specialist",     dept:"mkt",      photo:"assets/team/cuber-sample.webp" },
-    { name:"[ADD_NAME]",       role:"Media Buyer",                dept:"mkt",      photo:"assets/team/cuber-sample.webp" }
+    { name:"Mohamed Sherif",  role:"Founder & CEO",                 dept:"mgmt",   photo:"" },
+    { name:"Samar Shoman",    role:"Art Director",                  dept:"design", photo:"assets/team/samar-shoman.webp" },
+    { name:"Mahran",          role:"Head of Illustration Team",     dept:"illus",  photo:"assets/team/mahran.webp" },
+    { name:"Menna Seif",      role:"Head of Marketing Team",        dept:"mkt",    photo:"assets/team/menna-seif.webp" },
+    { name:"Zainab",          role:"Traffic Manager",               dept:"ops",    photo:"assets/team/zainab.webp" },
+    { name:"Rania Mahrous",   role:"Branding Designer",             dept:"design", photo:"assets/team/rania-mahrous.webp" },
+    { name:"Helana",          role:"Mid Graphic Designer",          dept:"design", photo:"assets/team/helana.webp" },
+    { name:"Rahma",           role:"Mid Graphic Designer",          dept:"design", photo:"assets/team/rahma.webp" },
+    { name:"Philopater",      role:"Social Media Performance",      dept:"mkt",    photo:"assets/team/philopater.webp" }
   ],
 
   /* Home · stage details (opened from "Explore the services" on a stage card).
@@ -294,7 +287,7 @@ window.IDNTIK_CONFIG = {
       logos.appendChild(d);
     });
     var ctr = $('#clientCtr');
-    ctr.innerHTML = '<b>' + String(C.clients.length).padStart(3,'0') + '</b>' + (C.totalClients ? '/' + C.totalClients : ' ' + bi('brands','علامة'));
+    if (ctr) ctr.innerHTML = '<b>' + String(C.clients.length).padStart(3,'0') + '</b>' + (C.totalClients ? '/' + C.totalClients : ' ' + bi('brands','علامة'));
   }
 
   var pairsEl = $('#pairs');
@@ -449,10 +442,9 @@ window.IDNTIK_CONFIG = {
     });
     C.team.forEach(function(m){
       var el = document.createElement('div'); el.className='member'; el.dataset.dept = m.dept;
-      var av = '<div class="avatar">' + (m.photo ? '<img src="'+esc(m.photo)+'" alt="'+esc(isPh(m.name)?m.role:m.name)+' — Cuber character" loading="lazy">' : '<div class="cube" aria-hidden="true"></div>') + '</div>';
+      var av = '<div class="avatar">' + (m.photo ? '<img src="'+esc(m.photo)+'" alt="'+esc(isPh(m.name)?m.role:m.name+' — '+m.role)+'" loading="lazy">' : '<div class="cube" aria-hidden="true"></div>') + '</div>';
       el.innerHTML = av + '<div class="m-name"></div><div class="m-role">'+esc(m.role)+'</div>';
       if (isPh(m.name)) $('.m-name', el).appendChild(tag(m.name)); else $('.m-name', el).textContent = m.name;
-      if (!m.photo) $('.avatar', el).appendChild(tag('[ADD_CUBER_IMAGE]'));
       team.appendChild(el);
     });
     fbar.addEventListener('click', function(e){
