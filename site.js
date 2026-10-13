@@ -63,15 +63,16 @@ window.IDNTIK_CONFIG = {
 
   /* About · team. dept must match a key in DEPTS below. photo = Cuber character image */
   team: [
-    { name:"Mohamed Sherif",  role:"Founder & CEO",                 dept:"mgmt",   photo:"" },
-    { name:"Samar Shoman",    role:"Art Director",                  dept:"design", photo:"assets/team/samar-shoman.webp" },
-    { name:"Mahran",          role:"Head of Illustration Team",     dept:"illus",  photo:"assets/team/mahran.webp" },
-    { name:"Menna Seif",      role:"Head of Marketing Team",        dept:"mkt",    photo:"assets/team/menna-seif.webp" },
-    { name:"Zainab",          role:"Traffic Manager",               dept:"ops",    photo:"assets/team/zainab.webp" },
-    { name:"Rania Mahrous",   role:"Branding Designer",             dept:"design", photo:"assets/team/rania-mahrous.webp" },
-    { name:"Helana",          role:"Mid Graphic Designer",          dept:"design", photo:"assets/team/helana.webp" },
-    { name:"Rahma",           role:"Mid Graphic Designer",          dept:"design", photo:"assets/team/rahma.webp" },
-    { name:"Philopater",      role:"Social Media Performance",      dept:"mkt",    photo:"assets/team/philopater.webp" }
+    { name:"Mohamed Sherif",    role:"Founder & CEO",            dept:"mgmt",   photo:"assets/team/mohamed-sherif.webp" },
+    { name:"Samar Shoman",      role:"Art Director",             dept:"design", photo:"assets/team/samar-shoman.webp" },
+    { name:"Abdelrahim Mahran", role:"Head of Motion Team",      dept:"illus",  photo:"assets/team/abdelrahim-mahran.webp" },
+    { name:"Menna Seif",        role:"Marketing Manager",        dept:"mkt",    photo:"assets/team/menna-seif.webp" },
+    { name:"Trevena",           role:"Strategist",               dept:"client", photo:"assets/team/trevena.webp" },
+    { name:"Zainab Ali",        role:"Traffic Manager",          dept:"ops",    photo:"assets/team/zainab-ali.webp" },
+    { name:"Rania Mahrous",     role:"Branding Designer",        dept:"design", photo:"assets/team/rania-mahrous.webp" },
+    { name:"Helana",            role:"Mid Graphic Designer",     dept:"design", photo:"assets/team/helana.webp" },
+    { name:"Rahma",             role:"Mid Graphic Designer",     dept:"design", photo:"assets/team/rahma.webp" },
+    { name:"Philopater",        role:"Social Media Performance", dept:"mkt",    photo:"assets/team/philopater.webp" }
   ],
 
   /* Home · stage details (opened from "Explore the services" on a stage card).
