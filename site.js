@@ -72,6 +72,7 @@ window.IDNTIK_CONFIG = {
     { name:"Rania Mahrous",     role:"Branding Designer",        dept:"design", photo:"assets/team/rania-mahrous.webp" },
     { name:"Helana",            role:"Mid Graphic Designer",     dept:"design", photo:"assets/team/helana.webp" },
     { name:"Rahma",             role:"Mid Graphic Designer",     dept:"design", photo:"assets/team/rahma.webp" },
+    { name:"Haneen Adel",       role:"Jr. Illustrator Artist",   dept:"illus",  photo:"assets/team/haneen-adel.webp" },
     { name:"Philopater",        role:"Social Media Performance", dept:"mkt",    photo:"assets/team/philopater.webp" },
     { name:"Nourhan",           role:"Content Creator",          dept:"mkt",    photo:"assets/team/nourhan.webp" }
   ],
